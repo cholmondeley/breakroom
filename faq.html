@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Break Room - Unleash Your Rage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Tailwind gray-900 */
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            /* === IMAGE URL FIXED WITH NEW, STABLE LINK === */
+            background-image: url('landing.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            background-color: rgba(17, 24, 39, 0.8);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #8B5CF6, #EC4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .cta-button {
+            background: linear-gradient(90deg, #8B5CF6, #EC4899);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.3), 0 4px 6px -2px rgba(236, 72, 153, 0.2);
+        }
+        .step-card {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-poppins text-2xl font-bold tracking-wider text-white">
+               THE BREAK<span class="gradient-text"> ROOM</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a>
+                <a href="#how-it-works" class="text-gray-300 hover:text-white transition-colors">How It Works</a>
+                <a href="#packages" class="text-gray-300 hover:text-white transition-colors">Packages</a>
+                <a href="faq.html" class="text-gray-300 hover:text-white transition-colors">FAQ</a>
+            </div>
+            <a href="#booking" class="cta-button text-white font-semibold px-6 py-2 rounded-full">
+                Book Now
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- FAQ Section -->
+<section id="faq" class="py-20 sm:py-28 bg-gray-800/50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white">Frequently Asked Questions</h2>
+            <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Everything you need to know before you unleash the fury.</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-4">
+            <!-- Question 1 -->
+            <details class="step-card rounded-lg p-6 group cursor-pointer" open>
+                <summary class="flex items-center justify-between font-semibold text-white text-lg">
+                    Is this actually safe?
+                    <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-300">
+                    Absolutely. Your safety is our top priority. Before you enter the room, you will receive a mandatory safety briefing and watch a demonstration video. You will be equipped with a full set of professional-grade safety gear: a protective coverall ("bunny suit"), heavy-duty boots, a welding apron, impact-resistant welding gloves, and a full-face motorcycle helmet. All sessions are monitored by our staff to ensure rules are followed.
+                </p>
+            </details>
+
+            <!-- Question 2 -->
+            <details class="step-card rounded-lg p-6 group cursor-pointer">
+                <summary class="flex items-center justify-between font-semibold text-white text-lg">
+                    What should I wear?
+                    <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-300">
+                    We require all participants to wear closed-toe shoes (boots are ideal, sneakers are acceptable, but no sandals or heels). We also recommend comfortable clothing that you can easily move around in, as our protective gear will be worn over your clothes.
+                </p>
+            </details>
+
+            <!-- Question 3 -->
+            <details class="step-card rounded-lg p-6 group cursor-pointer">
+                <summary class="flex items-center justify-between font-semibold text-white text-lg">
+                    What am I allowed to break?
+                    <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-300">
+                    You'll be breaking items provided by us, which are included in your package. This typically includes a mix of glassware, plates, printers, monitors, lamps, and other electronics. Prohibited items include anything containing hazardous materials like light bulbs, batteries, or pressurized containers. You are not permitted to break the structure of the room itself (walls, floor, door, camera).
+                </p>
+            </details>
+
+            <!-- Question 4 -->
+            <details class="step-card rounded-lg p-6 group cursor-pointer">
+                <summary class="flex items-center justify-between font-semibold text-white text-lg">
+                    Can I bring my own stuff to smash?
+                    <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-300">
+                    For safety and environmental reasons, we do not currently allow outside items. Our inventory is carefully sourced to ensure it is safe to break and can be disposed of responsibly. We promise we have plenty of satisfyingly smashable items for you!
+                </p>
+            </details>
+            
+            <!-- Question 5 -->
+            <details class="step-card rounded-lg p-6 group cursor-pointer">
+                <summary class="flex items-center justify-between font-semibold text-white text-lg">
+                    Can I get a video of my session?
+                    <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-300">
+                    Yes! Each room is equipped with a high-quality camera. You can add a video recording of your session to any package for a small additional fee. It's the perfect memento of your destructive therapy.
+                </p>
+            </details>
+
+            <!-- Question 6 -->
+            <details class="step-card rounded-lg p-6 group cursor-pointer">
+                <summary class="flex items-center justify-between font-semibold text-white text-lg">
+                    What is the age limit? Can I participate if I'm pregnant?
+                    <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-300">
+                    All participants must be 18 years of age or older and provide a valid ID upon arrival. For safety reasons, pregnant individuals are not permitted to participate in rage room activities.
+                </p>
+            </details>
+
+             <!-- Question 7 -->
+            <details class="step-card rounded-lg p-6 group cursor-pointer">
+                <summary class="flex items-center justify-between font-semibold text-white text-lg">
+                    Do I have to clean up the mess?
+                    <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <p class="mt-4 text-gray-300">
+                    Absolutely not. Your only job is to have a cathartic experience. Once your time is up, you can de-gear and relax in our cool-down lounge. We handle the entire cleanup and responsible disposal of all materials.
+                </p>
+            </details>
+
+        </div>
+    </div>
+</section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 sm:py-28 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white">A Simple Process for Maximum Release</h2>
+                <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Four steps from stressed out to blissed out.</p>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="step-card rounded-lg p-8 text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-500/20 mx-auto mb-6">
+                           <span class="font-poppins text-2xl font-bold text-indigo-400">1</span>
+                        </div>
+                        <h3 class="font-poppins text-xl font-semibold text-white">Book & Suit Up</h3>
+                        <p class="mt-2 text-gray-400">Choose your package online. When you arrive, we'll get you into our professional-grade safety gear.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="step-card rounded-lg p-8 text-center transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-pink-500/20 mx-auto mb-6">
+                           <span class="font-poppins text-2xl font-bold text-pink-400">2</span>
+                        </div>
+                        <h3 class="font-poppins text-xl font-semibold text-white">Choose Your Tools</h3>
+                        <p class="mt-2 text-gray-400">Select your instruments of catharsis from our armory: bats, hammers, crowbars, and more.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="step-card rounded-lg p-8 text-center transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-500/20 mx-auto mb-6">
+                           <span class="font-poppins text-2xl font-bold text-indigo-400">3</span>
+                        </div>
+                        <h3 class="font-poppins text-xl font-semibold text-white">Let Loose</h3>
+                        <p class="mt-2 text-gray-400">Enter your private room filled with smashable items—from glassware to electronics. It's all yours.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="step-card rounded-lg p-8 text-center transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-pink-500/20 mx-auto mb-6">
+                           <span class="font-poppins text-2xl font-bold text-pink-400">4</span>
+                        </div>
+                        <h3 class="font-poppins text-xl font-semibold text-white">Relax & Reflect</h3>
+                        <p class="mt-2 text-gray-400">Emerge feeling lighter and refreshed. We handle the entire cleanup operation. You just head home happy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Placeholder for Packages Section -->
+      <section id="packages" class="py-20 sm:py-28 bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white">Choose Your Catharsis</h2>
+            <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">We have a package for every level of stress. All prices are per person.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Package 1: Standard -->
+            <div class="step-card rounded-lg p-8 flex flex-col border-2 border-transparent hover:border-pink-500 transition-colors duration-300">
+                <div class="flex-grow">
+                    <h3 class="font-poppins text-2xl font-bold text-white">Standard</h3>
+                    <p class="mt-2 text-2xl font-bold gradient-text">$30</p>
+                    <p class="text-gray-400 font-semibold mt-1">15 Minutes</p>
+                    <ul class="mt-6 space-y-3 text-gray-300 text-left">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            1 Lamp
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Cups & Plates
+                        </li>
+                        <li class="flex items-center">
+                           <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Many Small Items
+                        </li>
+                    </ul>
+                </div>
+                <a href="#booking" class="mt-8 cta-button text-white w-full text-center font-semibold py-3 rounded-full">Select Plan</a>
+            </div>
+
+            <!-- Package 2: Double -->
+            <div class="step-card rounded-lg p-8 flex flex-col border-2 border-transparent hover:border-pink-500 transition-colors duration-300">
+                <div class="flex-grow">
+                    <h3 class="font-poppins text-2xl font-bold text-white">Double</h3>
+                    <p class="mt-2 text-2xl font-bold gradient-text">$40</p>
+                     <p class="text-gray-400 font-semibold mt-1">20 Minutes</p>
+                    <ul class="mt-6 space-y-3 text-gray-300 text-left">
+                        <li class="flex items-center">
+                             <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            1 Piece of Furniture
+                        </li>
+                        <li class="flex items-center">
+                           <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            1 Lamp
+                        </li>
+                        <li class="flex items-center">
+                           <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Cups & Plates
+                        </li>
+                         <li class="flex items-center">
+                           <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Many Small Items
+                        </li>
+                    </ul>
+                </div>
+                <a href="#booking" class="mt-8 cta-button text-white w-full text-center font-semibold py-3 rounded-full">Select Plan</a>
+            </div>
+
+            <!-- Package 3: Group 4 (Most Popular) -->
+            <div class="step-card rounded-lg p-8 flex flex-col relative border-2 border-pink-500">
+                 <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                    <span class="font-poppins text-xs font-bold uppercase tracking-wider bg-pink-500 text-white px-3 py-1 rounded-full">Most Popular</span>
+                </div>
+                <div class="flex-grow">
+                    <h3 class="font-poppins text-2xl font-bold text-white">Group 4</h3>
+                    <p class="mt-2 text-2xl font-bold gradient-text">$50</p>
+                    <p class="text-gray-400 font-semibold mt-1">30 Minutes</p>
+                    <ul class="mt-6 space-y-3 text-gray-300 text-left">
+                         <li class="flex items-center">
+                             <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            1 TV/Monitor/Printer
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Glassware
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Fruit Ninja Pitching
+                        </li>
+                         <li class="flex items-center">
+                           <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Small Items
+                        </li>
+                    </ul>
+                </div>
+                <a href="#booking" class="mt-8 cta-button text-white w-full text-center font-semibold py-3 rounded-full">Select Plan</a>
+            </div>
+
+            <!-- Package 4: Deluxe 4 -->
+            <div class="step-card rounded-lg p-8 flex flex-col border-2 border-transparent hover:border-pink-500 transition-colors duration-300">
+                <div class="flex-grow">
+                    <h3 class="font-poppins text-2xl font-bold text-white">Deluxe 4</h3>
+                    <p class="mt-2 text-2xl font-bold gradient-text">$60</p>
+                    <p class="text-gray-400 font-semibold mt-1">30 Minutes</p>
+                    <ul class="mt-6 space-y-3 text-gray-300 text-left">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Office Space Re-enactment
+                        </li>
+                        <li class="flex items-center">
+                           <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            PC Load Letter Printer
+                        </li>
+                        <li class="flex items-center">
+                             <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Appliances & TV
+                        </li>
+                        <li class="flex items-center">
+                           <svg class="w-5 h-5 mr-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Glassware & Small Items
+                        </li>
+                    </ul>
+                </div>
+                <a href="#booking" class="mt-8 cta-button text-white w-full text-center font-semibold py-3 rounded-full">Select Plan</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <p class="font-poppins text-xl font-bold tracking-wider text-white mb-4">
+                 THE BREAK<span class="gradient-text">ROOM</span>
+            </p>
+            <p>&copy; 2025 The Break Room LLC. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Smash responsibly. Must be 18 or older to participate.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
